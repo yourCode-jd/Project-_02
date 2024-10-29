@@ -1,17 +1,14 @@
 import type { Metadata } from "next";
-import localFont from "next/font/local";
+import { Quicksand } from "next/font/google";
+import Header from "@/components/layouts/Header";
+import TopBar from "@/components/layouts/TopBar";
+// import Head from "next/head";
 import "./globals.css";
 
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
-});
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
-});
+const font = Quicksand({
+  subsets: ['latin'],
+  // variable: '--Quicksand'
+})
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -25,9 +22,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+      {/* <Head>
+
+      </Head> */}
+      <body className={font.className}>
+        <TopBar />
+        <Header />
         {children}
       </body>
     </html>
