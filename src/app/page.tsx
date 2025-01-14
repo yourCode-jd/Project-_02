@@ -2,6 +2,7 @@ import HomeBanner from "@/components/banner/HomeBanner";
 import SummerDealData from "@/components/deals/SummerDealData";
 import BestSellerLayout from "@/components/bestSeller/BestSellerLayout";
 import ExploreBanner from "@/components/exploreDeal/ExploreBanner"
+import TestimonialLayout from "@/components/testimonial/TestimonialLayout"
 
 
 export default function Home() {
@@ -11,6 +12,7 @@ export default function Home() {
       <SummerDealData />
       <BestSellerLayout />
       <ExploreBanner />
+      <TestimonialLayout />
     </div>
   );
 }
