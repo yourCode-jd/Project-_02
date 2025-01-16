@@ -3,13 +3,16 @@ import Image from "next/image";
 function ExploreBanner() {
   return (
     <div className="relative">
-      <Image
-        src="/images/fullWidth-banner.png"
-        alt=""
-        width={1920}
-        height={500}
-      />
-      <div className=" relative sm:absolute sm:bottom-20 lg:bottom-36 lg:left-2/4 translate-x-1/2 p-8 px-4 sm:p-8 lg:p-0">
+      <div className="h-[300px]">
+        <Image
+          className="w-full h-full object-cover object-right "
+          src="/images/fullWidth-banner.png"
+          alt=""
+          width={1920}
+          height={500}
+        />
+      </div>
+      <div className="absolute top-2/4 left-5 sm:left-2/4 -translate-y-2/4 w-auto">
         <h1 className="text-2xl lg:text-4xl text-primary font-normal">
           Hot Summer Deals
         </h1>

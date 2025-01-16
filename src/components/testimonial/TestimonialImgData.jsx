@@ -20,6 +20,13 @@ const TestimonialImgData = [
     img: "/images/texture03.png",
     author: "JENNIFER D.",
   },
+  {
+    id: 4,
+    title: "“ABSOLUTELY LOVED UAMO!!!!!”",
+    para: "Apart from helping with the design and selecting pieces, Uamo helps with ordering, which is great and saves so much.",
+    img: "/images/texture02.png",
+    author: "LINDA",
+  },
 ];
 
 export default TestimonialImgData;

@@ -5,7 +5,7 @@ function BestSellerLayout() {
   return (
     <>
       <div className="dz_container_large ">
-        <div className="flex gap-5 flex-wrap lg:flex-nowrap py-20">
+        <div className="flex gap-5 flex-wrap lg:flex-nowrap py-5 pb-10 md:py-20">
           <div className="col w-full lg:w-[30%]">
             <div className="relative content-center h-full">
               <h2 className="text-2xl lg:text-4xl text-primary font-normal">
